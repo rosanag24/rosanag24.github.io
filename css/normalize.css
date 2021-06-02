@@ -60,7 +60,10 @@
     background-color: var(--primary-color);
       text-align: center;
       font-size: larger;
+      margin: 15%;
       color:cornsilk;
+      border-radius: 5%;
+      border-color: #efb08c;
   }
 
   /**
