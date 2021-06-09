@@ -1,7 +1,12 @@
 <!doctype html>
 <html lang="en-us">
 <head>
-  <title>Rosana Garcia - Home</title>
+  <title>Rosana Garcia - Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Rosana Garcia">
+  <meta name="description" content="Portal page for Rosana Garcia web projects in WDD 230: 
+  Web Frontend Development at Brigham Young University - Idaho">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@300&display=swap" rel="stylesheet">
@@ -11,7 +16,7 @@
         <header>
                 <div class="back"><h1>Rosana Garcia</h1></div>
                 <div class="perfil-frame">
-                    <img class="perfil-photo" src="assets/Perfil.jpg">
+                    <img class="perfil-photo" src="assets/Perfil.jpg" alt="perfil photo of website author">
                 </div>  
         </header>
 
@@ -39,10 +44,12 @@
         <footer>
             <div class="back-footer">
                 <p>&copy; 2021 | Rosana Garcia | Venezuela | <a href="https://www.byui.edu/online">BYUI Online Learning</a> </p>
-                <p id="updating-time">Last Updated: 4/Junio/2021</p>
+                <p id="updating-time">Last Updated: <span id="date"></span></p>
             </div>          
         </footer>
-    </div>
-
+        <script>
+            if (Date.parse(document.lastModified) != 0)
+                document.getElementById("date").innerHTML = document.lastModified;
+            </script>
 </body>
 </html>  

@@ -75,7 +75,7 @@
   
   ul{
       width:50%;
-      align-items: right;
+      align-items:flex-end  ;
       line-height: 1.5em;
   }
 
@@ -109,7 +109,7 @@
   }
   .perfil-photo{
     position: relative;
-    width:200;
+    width:200px;
     height: 220px;
     box-shadow: 1px 1px 4px 1px #888;
     border-radius: 3px;
