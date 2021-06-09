@@ -8,12 +8,13 @@
   <meta name="description" content="Portal page for Rosana Garcia web projects in WDD 230: 
   Web Frontend Development at Brigham Young University - Idaho">
   <link rel="stylesheet" href="css/normalize.css">
+  <script src="time.js"></script>
   <link >
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="last_modified_date()">
         <header>
                 <div class="back"><h1>Rosana Garcia</h1></div>
                 <div class="perfil-frame">
@@ -48,9 +49,5 @@
                 <p id="updating-time">Last Updated: <span id="date"></span></p>
             </div>          
         </footer>
-        <script>
-            if (Date.parse(document.lastModified) != 0)
-                document.getElementById("date").innerHTML = document.lastModified;
-        </script>
 </body>
 </html>  
