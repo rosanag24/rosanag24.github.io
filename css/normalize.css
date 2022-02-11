@@ -4,38 +4,40 @@
    ========================================================================== */
 /* Fonts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #d35d6e;
-  --secondary-color: #efb08c;
-  --accent1-color: #f8d49d;
-  --accent2-color: #5aa469;
+  --primary-color: #FDD8B5;
+  --secondary-color: #BBDBF7;
+  --accent1-color: #C34A36;
+  --accent2-color: #D99586;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: 'Mate SC', serif;
+  --heading-font: 'Marcellus SC', serif;
   --paragraph-font: 'Hind', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --paragraph-color-on-white: black; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #A26769;
-  --nav-link-color: #FFFF;
+  --nav-link-color: #C34A36;
   --nav-hover-link-color: #6D2E46;
   --nav-hover-background-color: #D5B9B2;;
 }
 /**
  * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 2. Prevent adjustments of font size and family after orientation changes in iOS.
  */
 
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    font-family: var(--paragraph-font) ;
+    font-family: var(--paragraph-font);
     margin: 0;
   }
-  
+  h1,h2,h3,h4{
+    font-family: var(--heading-font);
+  }
   /* Sections
      ========================================================================== */
   
@@ -49,77 +51,135 @@
   }
   
   /**
-   * Render the `main` element consistently in IE.
+   * CSS Styling.
    */
-  
+   .container{
+     width: 100%;
+     height: 100%;
+   }  
    .content{
     width: 80%;
     background-color: lavenderblush;
     margin-left: 5%;
     margin-right: 5%;
   }
+  .navbar{
+    height: 1.5em;
+    position:fixed;
+    top:0;
+    width:100%;
+  }
 
+  .nav-item{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .nav-item:hover {
+      font-size: 18px;
+      background-color: #212129;   
+      color:	white;
+      border-radius: 3px;     
+  }
+  .row-presentation{
+    padding: 1em;
+  }
+.row-presentation-2-col{
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.row-presentation-2-col > .right-col{
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+.row-presentation-2-col > .right-col >p{
+  text-align: justify;
+}
+.row-presentation-2-col > .left-col{
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+  
+}
+.left-col{
+  max-width: 800px;
+  min-width: 400px;
+  margin: auto;
+  margin-left: 2em;
+}
+section{
+  margin-top: 3em;
+}
    main {
     display: grid;
     grid-template-columns: 80% 20%;
     align-content: center;
-    height: fit-content;
+    height: 100%;
     padding-left: 10%;
     padding-right: 5%;
   }
+  .page-section{
+    padding-top: 200px;
+    height: min-content;
+  }
+  .carousel .carousel-control-next-icon { background-color: none; background-image: none; font-size: 3em; }
+  .carousel .carousel-control-prev-icon { background-color: none; background-image: none; font-size: 3em;}
 
-  #main-content{
-      grid-column: 1/2;
-      font-size: 20px;
+  .carousel > a { background-color: none}
+  .carousel > a{ background-color: none}
+
+  .webpage-scr{
+    max-width: 500px;
+    max-height: 350px;
   }
   
   ul{
       width:50%;
       align-items:flex-end  ;
       line-height: 1.5em;
+      list-style: none;
+      display: flex;
   }
-
   header{
-    display: inline-flex;    
-    display: grid;
-    grid-template-columns: 80% 20%;
+    top:0;
+    position: fixed;
+    z-index: 2;
+    display: flex;
     font-size: 2em;
-    padding-left: 5%;
-    align-content: center;
-  }
-
-  .back{
-    position: relative;
-    align-self: center;
-    background-color: var(--primary-color);
+    width: 100%;
     text-align: center;
-    color:cornsilk;
-    border-radius: 5px;
-    border-color: #efb08c;
-    font-size: 25px;
+    background-color: var(--secondary-color);
+  }
+  .secondary-header .cinturon{
+    align-items: center;
+    margin-left: 40%;
     height: 4em;
+    width: 100%;
+    background-color: var(--secondary-color);
+    text-align: center;
   }
   .perfil-frame{
     position: relative;
-    height: fit-content;
-    width: fit-content;
-    margin-bottom: 5%;
-    top: 50px;
-    right:50px;
+    max-height: 3em;
+    width: 100%; 
   }
   .perfil-photo{
     position: relative;
-    width:250px;
-    height: 220px;
+    max-height: 2em;
+    border-radius: 100%;
     box-shadow: 1px 1px 4px 1px #888;
-    border-radius: 3px;
-    background-color: white;
-    margin-bottom: 10%;   
+    margin-bottom: 1em;
   }
-  header h1{
-      align-items: center;
+  .row-presentation-about-me{
+    display: inline-flex;
   }
-
+  .about-me-photo{
+    width: 250px;
+    height: 280px;
+    border-radius: 10%;
+  }
   footer .back-footer{
     background-color: var(--primary-color);
     text-align: center;
@@ -130,12 +190,25 @@
     border-color: #efb08c;
     font-size: 20px;
   }
-
- h2,h3,h4 {
+ h1,h2,h3,h4 {
       font-family: var(--heading-font);
-      color:var(--primary-color);
+      color:black;
   }
-  
+  .primary-icon{    
+    position: relative;
+    color:var(--accent1-color);
+    min-width: 50px;
+    max-width: 150px;
+  }
+  .secondary-icon{
+    position: relative;
+    color:var(--accent1-color);
+    min-width: 40px;
+    max-width: 50px;
+    right: 15%;
+    z-index: 1;
+    bottom: 30%;
+  }
   /* Grouping content
      ========================================================================== */
   
@@ -171,6 +244,7 @@
     text-decoration: none;
   }
 
+  
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
@@ -461,4 +535,16 @@
   
   [hidden] {
     display: none;
+  }
+  @media only screen and (max-width:900px) {
+    ul{
+      background-color: var(--primary-color);
+      width: 100%;
+    }
+    nav>ul>li{
+      float: left;
+    }
+    .nav-item{
+      text-align: left;
+    }
   }

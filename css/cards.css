@@ -1,0 +1,37 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@300&display=swap');
+
+span{
+  color:black;
+}
+.skill-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card-header img{
+  width: 20em;
+  height: 15em;
+  object-fit: contain;
+  }
+.card-header{
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent1-color), white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.tool-card{
+  width:15em;
+  height: 15em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 30%;
+}
+.tool-card .card-header img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
