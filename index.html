@@ -1,53 +1,209 @@
 <!doctype html>
 <html lang="en-us">
 <head>
+  <link rel="icon" href="./public/assets/logo.png">
   <title>Rosana Garcia - Portal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Rosana Garcia">
   <meta name="description" content="Portal page for Rosana Garcia web projects in WDD 230: 
   Web Frontend Development at Brigham Young University - Idaho">
-  <link rel="stylesheet" href="css/normalize.css">
-  <script src="js/time.js"></script>
-  <link >
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./public/css/normalize.css">
+  <link rel="stylesheet" href="./public/css/cards.css">
+  <link rel="stylesheet" href="./public/css/views.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
-<body onload="last_modified_date()">
+<body>
         <header>
-                <div class="back"><h1>Rosana Garcia</h1></div>
-                <div class="perfil-frame">
-                    <img class="perfil-photo" src="assets/Perfil.jpg" alt="perfil photo of website author">
-                </div>  
-        </header>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active" onclick="btnActive($(this));">
+                  <a class="nav-link" href="#about-me"><i class="bi bi-house-fill"></i> Home</a>
+                </li>
+                <li class="nav-item" onclick="btnActive($(this));">
+                  <a class="nav-link" href="#skills"><i class="bi bi-book"></i> Skills</a>
+                </li>
+                <li class="nav-item" onclick="btnActive($(this));">
+                  <a class="nav-link" href="#about-me"><i class="bi bi-file-person-fill"></i> About me</a>
+                </li>
+                <li class="nav-item" onclick="btnActive($(this));">
+                  <a class="nav-link" href="#hobbies"><i class="bi bi-joystick"></i> Hobbies</a>
+                </li>
+                <li class="nav-item" onclick="btnActive($(this));">
+                  <a class="nav-link" href="#experience"><i class="bi bi-pc-display"></i> Experience</a>
+                </li>
 
-        <div class="content"></div>
-        <main>
-
-            <div id="main-content">
-                <h2>WDD 230: Assignment Portal</h2>
-                <hr>
-                <ul>
-                    <li><b>Lesson 01:</b> <a href="#">Course Assignments Portal</a></li>
-                    <li><b>Lesson 01:</b> <a>Design Principles Document</a></li>
-                    <li><b>Lesson 02:</b> <a>Website Planning Document</a></li>
-                    <li><b>Lesson 02:</b> <a>Preston Town Page Start</a></li>
-                    <li><b>Lesson 03:</b> <a>Preston Town Page</a></li>
-                    <li><b>Lesson 03:</b> <a>Reponsive Images</a></li>
-                    <li><b>Lesson 04:</b> <a>The Gallery Page</a></li>
-                    <li><b>Lesson 04:</b> <a>The Storm Center Page</a></li>
-                    <li><b>Lesson 05:</b> <a>The Weather Site Home Page</a></li>
-                    <li><b>Lesson 05:</b> <a>Preston Weather API</a></li>
-                </ul>
+              </ul>
             </div>
-    
+          </nav>
+                <div class="cinturon">
+                    <div style="margin: auto;">
+                      <h1>Rosana Garcia</h1>
+                      <img  class="perfil-photo" src="./public/assets/logo-md.png" alt="perfil photo of website author">  
+                    </div>
+                </div>
+        </header>
+        <main>
+            <div class="container">
+              <div id="about-me" class="page-section">
+                <section class="row-presentation-about-me"> 
+                  <div>
+                    <img style="margin-top: 20px; margin-left: 10px;" class="about-me-photo" src="./public/assets/about-me-photo.jpg" alt="Photo of website author">
+                  </div>
+                  <div class="left-col">
+                    <h2>Hello World! My name is Rosana Garcia</h2><hr>
+                    People describe me as a self-reliant, honest and persevering person. I like to learn new things that contribute to my personal and professional development. My bachelor's degree is Computer Engineering, and my experience as a programmer center mostly in web development, pyton, and java programming, nevertheless I have also experience programming in Android Studio and Ruby on Rails which I used for college projects. I believe that every person has the potential to overcome the tests and trials of life, and take advance of them to grow as person.
+                  </div>
+                </section>
+              </div>
+
+              <div id="skills"  class="page-section">
+                <section class="row-presentation" >
+                  <h2>Programming Languages</h2><hr>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            
+                            <div class="card">
+                              <div class="skill-card">
+                                <div class="card-header">
+                                  <img src="./public/assets/html-css-js.jpg" alt="First slide native web tools">
+                                </div>
+                                <div class="card-body">
+                                  <b> HTML, CSS and JavaScript </b><hr>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card">
+                              <div class="skill-card">
+                                <div class="card-header">
+                                  <img src="./public/assets/androidstudio.png" alt="Second Slide Android Studio">
+                                </div>
+                                <div class="card-body">
+                                <b>Android Studio</b> <hr>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card">
+                              <div class="skill-card">
+                                <div class="card-header">
+                                  <img src="./public/assets/java.png" alt="Third slide Java">
+                                </div>
+                                <div class="card-body">
+                                <b>Java</b> <hr>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card">
+                              <div class="skill-card">
+                                <div class="card-header">
+                                  <img src="./public/assets/python.jpg" alt="First slide">
+                                </div>
+                                <div class="card-body">
+                                <b>Python</b><hr>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="card">
+                              <div class="skill-card">
+                                <div class="card-header">
+                                  <img src="./public/assets/php.jpg" alt="First slide">
+                                </div>
+                                <div class="card-body">
+                                <b>PHP</b><hr>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" style="color:#212129;" aria-hidden="true"><i class="bi bi-caret-left-fill"></i></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next"  href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" style="color: #212129;"aria-hidden="true"><i class="bi bi-caret-right-fill"></i></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </section>
+
+                <section class="row-presentation">
+                  <h2>Web Designs</h2><hr>
+                
+                  <div class="row-presentation-2-col" >
+                    <div class="img-presentation left-col">
+                      <div class="webpage-scr" >
+                        <img src="./public/assets/eml.jpg" alt="webpage easymathlearning screenshot">
+                      </div>
+                      <div class="phonepage-scr">
+                        <img  src="./public/assets/phone-view.jpg" alt="phone view of easymathlearning screenshot">
+                      </div>
+                    </div>
+                    <div class="txt-content right-col">
+                      <p>Easy Math Learning Template website, this project was destinated to help young students to improve their skills 
+                        in solving math problems the methods and excercises are designed to help you to master from basic to complex 
+                        math operations by using speed, structure and average rating hit as keys indicators</p>
+                      <button class="btn btn-secondary btn-visit" onclick="window.location.href= 'https://easy-math-learning.glitch.me/'">Visit</button>
+                      <button class="btn btn-secondary btn-visit" onclick="window.location.href= 'https://easy-math-learning.glitch.me/site-plan.html'">Site plan</button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="row-presentation-2-col" >
+                  <div class="img-presentation left-col">
+                    <div class="webpage-scr" >
+                      <img src="./public/assets/wwr.jpg" alt="webpage easymathlearning screenshot">
+                    </div>
+                    <div class="phonepage-scr">
+                      <img  src="./public/assets/phone-view-2.jpg" alt="phone view of easymathlearning screenshot">
+                    </div>
+                  </div>
+                  <div class="txt-content right-col">
+                    <p>This College project consisted in propose a template for a rafting company. The goal of the current design is to reach a greater 
+                      number of potential clients providing to the users a variety of rafting programs according to their necessities and 
+                      the level of experience addapting the routes from professionals to beginners, families and individuals.
+                    </p>
+                      <button class="btn btn-secondary btn-visit" onclick="window.location.href= 'https://rosana-project.glitch.me/'">Visit</button>
+                      <button class="btn btn-secondary btn-visit" onclick="window.location.href= 'https://rosana-project.glitch.me/site-plan.html'">Site plan</button>
+                  </div> 
+                </section>     
+              </div>
+              <div id="hobbies"  class="page-section">
+                
+              </div>
+              <div id="experience"  class="page-section">
+
+              </div>
+            </div>
         </main>
-        <footer>
-            <div class="back-footer">
-                <p>&copy; 2021 | Rosana Garcia | Venezuela | <a href="https://www.byui.edu/online">BYUI Online Learning</a> </p>
-                <p id="updating-time">Last Updated: <span id="date"></span></p>
-            </div>          
-        </footer>
 </body>
+<!--Js code-->
+<script>
+  $(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+  });
+</script>
 </html>  
