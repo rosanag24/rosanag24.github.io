@@ -1,0 +1,39 @@
+.webpage-scr{
+    position: relative;
+    top:0;
+    left:0;
+    max-width: 500px;
+    max-height: 400px;
+}
+.webpage-scr > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.phonepage-scr{
+    position: relative;
+    width:200px;
+    height: 300px;
+    z-index: 1;
+    bottom:250px;
+    left: 70%;
+}
+.phonepage-scr > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.btn-secondary, .btn-secondary:active, .btn-secondary:visited {
+    background-color: #B0A8B9 !important;
+    color: #4B4453 !important;
+    text-decoration: none;
+}
+.btn-secondary:hover, .btn-secondary>a:hover{
+    background-color: #4B4453  !important;
+    color: #B0A8B9 !important;
+}
+
+embed{
+    min-width: 80%;
+    min-height: 500px;
+}
