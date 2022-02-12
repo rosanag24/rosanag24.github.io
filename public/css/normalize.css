@@ -101,11 +101,10 @@
   justify-content: center;
   align-items: center;
   max-height: 400px;
-  
 }
 .left-col{
   max-width: 800px;
-  min-width: 400px;
+  min-width: 300px;
   margin: auto;
   margin-left: 2em;
 }
@@ -208,6 +207,14 @@ section{
     right: 15%;
     z-index: 1;
     bottom: 30%;
+  }
+  .col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #hobbies > .row-presentation{
+    display: block;
+    width: 250px;
   }
   /* Grouping content
      ========================================================================== */
@@ -410,15 +417,6 @@ section{
   [type="submit"]:-moz-focusring {
     outline: 1px dotted ButtonText;
   }
-  
-  /**
-   * Correct the padding in Firefox.
-   */
-  
-  fieldset {
-    padding: 0.35em 0.75em 0.625em;
-  }
-  
   /**
    * 1. Correct the text wrapping in Edge and IE.
    * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -441,14 +439,6 @@ section{
   
   progress {
     vertical-align: baseline;
-  }
-  
-  /**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
-  
-  textarea {
-    overflow: auto;
   }
   
   /**
